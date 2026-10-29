@@ -3,8 +3,7 @@ import joblib
 import pandas as pd 
 
 # loading the model
-with open('D:/CODING/ML using Python/Venv/Code/My_Model.joblib', 'rb') as f:
-    model = joblib.load(f)
+model = joblib.load("My_Model.joblib")
 
 st.title("🏡 House Price Predictor")
 st.subheader('''_This is a simple house price predictor web application for Machine learning model. which can predict the house price based on the input features._''')
